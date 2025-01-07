@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    overflow-x: hidden;
+}
+.slick-prev:before, .slick-next:before{
+    color: orangered!important;
+    font-size: 40px !important; 
+   
+}
+.slick-prev, .slick-next{ z-index: 1000 !important;}
+.boxSlider .slick-slide,.boxSlider  .slick-active{
+    width: fit-content !important;
+    margin: 0 10px;
+}
+.slick-slide > div{
+    display: flex;
+    gap: 10px;
+}
+.slider-container {height: 100%;}
+
+.bigDiv  .slick-slider {height: 82%;}
+.bigDiv  .slick-slider .slick-list{height: 100%;}
+
+.small .slick-slider {width:  100%;height: 100%;}
+.small .slick-slider .slick-list,.small .slick-slider .slick-track ,.small .slick-slider .slick-slide > div{height: 100%;}
+.small .slick-slider .slick-slide > div > div {display: flex !important; gap: 10px;}
+.small .slick-arrow{display: none !important;}
+.bigDiv .slick-slider .slick-track,.bigDiv .slick-slider .slick-slide > div{
+    height: 100%;
+}
+.dis .slick-list,.dis .slick-track,.dis .slick-slide > div{height: 100%;}
+ .slick-next::before{right: 100px;position: absolute;}
+.slick-prev::before{left: 100px;position: absolute;}
+.bigDiv .slick-next::before{right: 30px;position: absolute;}
+.bigDiv .slick-prev::before{left: 30px;position: absolute;
+
+}
+
+ 
